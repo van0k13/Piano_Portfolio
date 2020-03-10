@@ -1,0 +1,14 @@
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    background-color: rgb(86, 82, 94);
+}
+.headers {
+    width: 50%;
+    border: 1px black solid;
+}
+.languages {
+    width: 10%;
+    border: 1px black solid
+}
