@@ -1,4 +1,26 @@
 .mainBlock {
-    min-height: 100vh;
-    background-color: rgb(146, 120, 161);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-image: url(../../assets/img/piano.png);
+}
+.mainDescr {
+    width: 100%;
+    color: aliceblue;
+}
+.mainDescr h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+.mainDescr h1 {
+    margin: 0 auto;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Hind', sans-serif;
 }

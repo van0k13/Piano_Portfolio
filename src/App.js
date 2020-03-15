@@ -8,7 +8,7 @@ import Prices from './Components/Prices/Prices';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 
-function App() {
+const App = () => {
   return (
     <div className={styles.App}>
       <Header />
