@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
     min-height: 84px;
-    background-color: #E5E8EC
+    background-color: #E5E8EC;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
 }
 .languages {
     display: flex;

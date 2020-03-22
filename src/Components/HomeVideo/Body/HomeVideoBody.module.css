@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .buttonsContainer {
     width: 100%;
@@ -23,20 +24,32 @@
     border: 1px solid #e5e8ec;
     cursor: pointer;
     font-family: 'Hind', sans-serif;
+    transition: 0.3s xease-in-out;
+}
+.button:hover {
+    color: #fff;
+    background-color: #888888;
 }
 .projectsContainer {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 90%;
 }
 .project {
-    width: 400px;
-    height: 400px;
+    position: relative;
+    width: 30%;
+    height: 300px;
     margin: 5px;
     background-image: url(../../../assets/img/piano2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    transition: 1s ease-in-out;
+}
+.projects:active {
+    transform: rotate(30deg);
 }

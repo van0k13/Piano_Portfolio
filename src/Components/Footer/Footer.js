@@ -5,9 +5,8 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.top}>olga lavrenyuk</h2>
-          <span className={styles.line}></span>
+        <div className={styles.headerContainer}>
+          <h2 className={styles.top}>Olga <span>Lavrenyuk</span></h2>
         </div>
         <div className={styles.socials}>
           <a href='https://www.facebook.com/profile.php?id=100001654446507'>

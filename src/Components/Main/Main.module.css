@@ -4,10 +4,22 @@
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    background-image: url(../../assets/img/piano.png);
+    background-image: url(../../assets/img/piano1.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+.mainBlock::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.384);
 }
 .mainDescr {
     width: 100%;
+    position: relative;
     color: aliceblue;
 }
 .mainDescr h2 {
