@@ -1,8 +1,10 @@
 import React from 'react';
+import Fade from 'react-awesome-reveal'
 import styles from './Contacts.module.css'
 
 const Contacts = () => {
   return (
+    <Fade >
 <div id={'contacts'} className={styles.contacts}>
       <div className={styles.container}>
         <div className={styles.headerContainer}><h1>Contact<span>Me</span></h1>
@@ -16,7 +18,8 @@ const Contacts = () => {
           <button className={styles.worksButton}><span>Submit</span></button>
         </div>
       </div>
-    </div>  );
+    </div> 
+    </Fade> );
 }
 
 export default Contacts;

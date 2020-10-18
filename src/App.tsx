@@ -14,10 +14,10 @@ import { initialState } from './store';
 const App = () => {
   return (
     <div className={styles.App}>
-      <Header />
+      <Header navElements={initialState.navElements}/>
       <Main />
       <AboutMe />
-      <Homevideo projects={initialState}/>
+      <Homevideo projects={initialState.projects}/>
       <Slogan />
       <Prices />
       <Contacts />

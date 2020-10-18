@@ -1,9 +1,11 @@
 import React from 'react';
+import Fade from 'react-awesome-reveal'
 import styles from './AboutMe.module.css'
 
 const AboutMe = () => {
   return (
-    <div className={styles.aboutMeBlock}>
+    <Fade >
+    <div id={'about'} className={styles.aboutMeBlock}>
       <div className={styles.photoContainer}>
 
       </div>
@@ -25,6 +27,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }
 

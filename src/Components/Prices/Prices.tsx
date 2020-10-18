@@ -1,9 +1,10 @@
 import React from 'react';
+import Fade from 'react-awesome-reveal'
 import styles from './Prices.module.css'
 
 const Prices = () => {
-  return (
-      <div className={styles.pricesBlock}>
+  return <Fade>
+      <div id={'prices'} className={styles.pricesBlock}>
         <div className={styles.headerContainer}><h1>Pr<span>ices</span></h1></div>
         <div className={styles.bodyContainer}>
           <div className={styles.remoteLocalContainer}>Remote leçons
@@ -36,7 +37,7 @@ const Prices = () => {
             </div></div>
         </div>
       </div>
-  );
+      </Fade>;
 }
 
 export default Prices;
