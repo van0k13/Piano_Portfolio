@@ -9,16 +9,15 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Slogan from './Components/Slogan/Slogan';
 import { BrowserRouter } from 'react-router-dom';
-import { connect, Provider } from 'react-redux';
-import store from './BLL/Store';
+import { initialState } from './store';
 
-const App = (props) => {
+const App = () => {
   return (
     <div className={styles.App}>
       <Header />
       <Main />
       <AboutMe />
-      <Homevideo projects={props.projects}/>
+      <Homevideo projects={initialState}/>
       <Slogan />
       <Prices />
       <Contacts />
@@ -27,17 +26,10 @@ const App = (props) => {
   );
 }
 
-const mstp = (state) => ({
-  projects: state.projects
-})
-
-const AppContainer = connect(mstp)(App)
 const MainApp = () => {
   return (
     <BrowserRouter>
-    <Provider store={store}>
-    <AppContainer />
-    </Provider>
+    <App />
     </BrowserRouter>
   )
 }

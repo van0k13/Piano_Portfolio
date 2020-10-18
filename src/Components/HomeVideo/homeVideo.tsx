@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './HomeVideo.module.css'
-import HomeVideoHeader from './Header/HomeVideoHeader.js';
-import HomeVideoBody from './Body/HomeVideoBody.js';
+import HomeVideoHeader from './Header/HomeVideoHeader';
+import HomeVideoBody from './Body/HomeVideoBody';
 
-const Homevideo = (props) => {
+const Homevideo = ( {projects}: any ) => {
   const [filterValue, setFilterValue] = useState('All')
   console.log(filterValue)
   return (
@@ -11,7 +11,7 @@ const Homevideo = (props) => {
       <div className={styles.container}>
         <HomeVideoHeader />
         <HomeVideoBody setFilterValue={setFilterValue}
-        projects={props.projects.filter(p => {
+        projects={projects.filter((p: any) => {
                         switch (filterValue) {
                             case 'All':
                                 return p;

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './HomeVideoBody.module.css'
 
-const HomeVideoBody = (props) => {
-  const projectsElements = props.projects.map(p =>
+const HomeVideoBody = (props: any) => {
+  const projectsElements = props.projects.map((p: any) => 
     <div key={p.id} className={styles.project}>
       <img src={p.img} />
       
