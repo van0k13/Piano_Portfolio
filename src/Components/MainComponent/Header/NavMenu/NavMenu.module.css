@@ -1,0 +1,33 @@
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 60%;
+    margin-right: 20px;
+}
+.headers div a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 28px 0px 25px;
+    margin: 0 29px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Hind', sans-serif;
+}
+
+  
+.headers > .active {
+    border-bottom: 2px solid rgba(68, 75, 139, 0.658);
+    color: rgb(85, 112, 112);
+}
+  
+.link{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-bottom: 3px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}

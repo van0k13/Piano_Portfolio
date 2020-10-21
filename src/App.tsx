@@ -1,25 +1,27 @@
 import React from 'react';
 import styles from'./App.module.css';
-import AboutMe from './Components/AboutMe/aboutme';
-import Contacts from './Components/Contacts/Contacts';
-import Homevideo from './Components/HomeVideo/homeVideo';
-import Main from './Components/Main/Main';
-import Prices from './Components/Prices/Prices';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
-import Slogan from './Components/Slogan/Slogan';
+import AboutMe from './Components/MainComponent/AboutMe/aboutme';
+import Contacts from './Components/MainComponent/Contacts/Contacts';
+import Homevideo from './Components/MainComponent/HomeVideo/homeVideo';
+import Main from './Components/MainComponent/Main/Main';
+import Prices from './Components/MainComponent/Prices/Prices';
+import Footer from './Components/MainComponent/Footer/Footer';
+import Header from './Components/MainComponent/Header/Header';
+import Slogan from './Components/MainComponent/Slogan/Slogan';
 import { BrowserRouter } from 'react-router-dom';
 import { initialState } from './store';
 
 const App = () => {
+  const {headerComponent, aboutMeComponent, homeVideoComponent, introComponent, 
+    sloganComponent, pricesComponent} = initialState;
   return (
     <div className={styles.App}>
-      <Header navElements={initialState.navElements}/>
-      <Main />
-      <AboutMe />
-      <Homevideo projects={initialState.projects}/>
-      <Slogan />
-      <Prices />
+      <Header headerComponent={headerComponent}/>
+      <Main introComponent={introComponent}/>
+      <AboutMe aboutMeComponent={aboutMeComponent}/>
+      <Homevideo homeVideoComponent={homeVideoComponent}/>
+      <Slogan sloganComponent={sloganComponent}/>
+      <Prices pricesComponent={pricesComponent}/>
       <Contacts />
       <Footer />
     </div>

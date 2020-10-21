@@ -1,0 +1,46 @@
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.projectsContainer {
+    position: relative;
+    margin: auto;
+    padding: 40px 0;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vmin;
+    grid-auto-flow: dense;
+}
+.project {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+.project:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+}
+.project:nth-child(2n+3) {
+    grid-row-start: span 2;
+}
+.project img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(0.7);
+    transition: 0.3s ease-in-out;
+}
+.project img:hover {
+    filter: none;
+}

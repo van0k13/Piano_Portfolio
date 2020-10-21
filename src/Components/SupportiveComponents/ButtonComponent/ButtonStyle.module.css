@@ -1,0 +1,28 @@
+.buttonsContainer {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: #888888;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 1px solid #e5e8ec;
+    cursor: pointer;
+    font-family: 'Hind', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.button:hover {
+    color: #fff;
+    background-color: #888888;
+}
+.button:focus {
+    border: none;
+}
