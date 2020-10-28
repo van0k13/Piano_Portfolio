@@ -45,7 +45,7 @@ const Contacts: React.FC<iProps> = ({ contactComopnent }) => {
               className={styles.formInput}
               value={email} onChange={(v) => setEmail(v.target.value)}
               type='email' placeholder='E-mail' />
-            <textarea
+            <textarea 
               className={styles.formInput}
               value={text} onChange={(v) => setText(v.target.value)}
               rows={8} placeholder="Your message" />
