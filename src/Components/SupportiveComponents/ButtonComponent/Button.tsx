@@ -30,7 +30,8 @@ export const ButtonWithHookSupp: React.FC<IPropsButtonWithHookSupp> = ({
 interface IPropsButton {
     noContainer?: boolean,
     booleanValue?: boolean
-    buttonOnClick?: () => string,
+    buttonOnClick?: () => void,
+    buttonPromiseOnClick?: () => (() => Promise<void>) | undefined,
     buttonOnClickBoolean?: (value: boolean | undefined) => void,
     buttonName: string
 }
@@ -38,11 +39,12 @@ interface IPropsButton {
 export const Button: React.FC<IPropsButton> = ({
     buttonOnClick, buttonName,
     buttonOnClickBoolean, booleanValue,
-    noContainer
+    noContainer, buttonPromiseOnClick
     }) => {
 const onClick = () => {
 if (buttonOnClick) buttonOnClick()
 else if (buttonOnClickBoolean) buttonOnClickBoolean(booleanValue)
+else if (buttonPromiseOnClick) buttonPromiseOnClick()
 }
 if (!noContainer) {
 return <div className={styles.buttonsContainer}>

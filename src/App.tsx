@@ -13,7 +13,7 @@ import { initialState } from './store';
 
 const App = () => {
   const {headerComponent, aboutMeComponent, homeVideoComponent, introComponent, 
-    sloganComponent, pricesComponent} = initialState;
+    sloganComponent, pricesComponent, contactComopnent} = initialState;
   return (
     <div className={styles.App}>
       <Header headerComponent={headerComponent}/>
@@ -22,7 +22,7 @@ const App = () => {
       <Homevideo homeVideoComponent={homeVideoComponent}/>
       <Slogan sloganComponent={sloganComponent}/>
       <Prices pricesComponent={pricesComponent}/>
-      <Contacts />
+      <Contacts contactComopnent={contactComopnent}/>
       <Footer />
     </div>
   );

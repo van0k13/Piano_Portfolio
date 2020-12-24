@@ -8,6 +8,7 @@ import proj7 from './assets/img/piano2.jpg'
 import introImage from './assets/img/piano3.jpg'
 import aboutMeImage from './assets/img/Koti.jpg'
 import sloganImage from './assets/img/noti.jpg'
+import contactImage from './assets/img/hands.jpg'
 
 
 
@@ -75,5 +76,11 @@ export const initialState = {
                 {lessonText: 'Ten Lessons', localLessons: 160, remoteLessons: 250}
         
         ]
+    },
+    contactComopnent:
+    {
+        headerTextH1Value: 'Contact',
+        headerTextSpanValue: 'Me',
+        contactImage
     }
 }
