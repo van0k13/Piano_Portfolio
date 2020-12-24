@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-awesome-reveal'
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header'
 
 

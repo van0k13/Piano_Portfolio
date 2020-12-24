@@ -1,3 +1,5 @@
+@import '../../../assets/styles/global.scss';
+
 .buttonsContainer {
     width: 100%;
     padding-bottom: 20px;
@@ -11,8 +13,8 @@
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 200;
-    color: #888888;
-    background-color: #fff;
+    color: $light-grey;
+    background-color: $total-white;
     margin-right: 10px;
     border: 1px solid #e5e8ec;
     cursor: pointer;
@@ -20,8 +22,8 @@
     transition: 0.3s ease-in-out;
 }
 .button:hover {
-    color: #fff;
-    background-color: #888888;
+    color: $total-white;
+    background-color: $light-grey;
 }
 .button:focus {
     border: none;

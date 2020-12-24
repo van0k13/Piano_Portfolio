@@ -1,5 +1,5 @@
 import React from 'react'
-import headerStyle from './HeaderStyle.module.css'
+import headerStyle from './HeaderStyle.module.scss'
 
 interface iProps {
     h1Value: string;

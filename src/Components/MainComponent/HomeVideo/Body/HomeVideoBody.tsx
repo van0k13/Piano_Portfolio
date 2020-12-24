@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { Project } from '../../../../types';
 import { ButtonWithHookSupp } from '../../../SupportiveComponents/ButtonComponent/Button';
-import styles from './HomeVideoBody.module.css'
+import styles from './HomeVideoBody.module.scss'
 
 interface iProps {
   projects: Project[],

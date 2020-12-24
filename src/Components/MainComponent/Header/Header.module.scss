@@ -1,8 +1,10 @@
+@import '../../../assets/styles/global.scss';
+
 .headerBlock {
     display: flex;
     justify-content: space-between;
     min-height: 84px;
-    background-color: #E5E8EC;
+    background-color: $semi-alice-blue;
     position: fixed;
     width: 100%;
     z-index: 1;

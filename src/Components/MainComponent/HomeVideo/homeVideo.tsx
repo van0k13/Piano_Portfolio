@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Fade from 'react-awesome-reveal'
-import styles from './HomeVideo.module.css'
+import styles from './HomeVideo.module.scss'
 import HomeVideoBody from './Body/HomeVideoBody';
 import { constantVariables, Project } from '../../../types';
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header';

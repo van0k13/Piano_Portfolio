@@ -1,6 +1,8 @@
+@import '../../../assets/styles/global.scss';
+
 .contacts {
     min-height: 80vh;
-    background-color: #fff;;
+    background-color: $total-white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +23,7 @@
     border-radius: 10px;
   }
   .text{
-    color: aliceblue;
+    color: $alice-blue;
     transition: 2s all;
     font-weight: bold;
     text-transform: capitalize;
@@ -44,10 +46,10 @@
     margin: 10px;
     padding: 7px;
     font-size: 17px;
-    border: 1px solid rgb(127, 194, 252);
+    border: 1px solid $light-blue;
     border-radius: 2px;
-    background-color: #e5e8ec;
-    color: rgba(0, 0, 0, 0.8);
+    background-color: $semi-alice-blue;
+    color: $total-dark-80;
     resize: none;
     font-family: 'Josefin Sans', sans-serif;
     transition: 0.4s ease-in-out 0s;
@@ -60,25 +62,25 @@
     padding: 40px;
   }
   .worksButton {
-    color: rgba(255, 255, 255, 0);
+  color: $total-black;
   transition: all 0.5s;
   position: relative;
 	height: 50px;
 	text-align: center;
 	width: 150px;
   cursor: pointer;
-  background-color: #e5e8ec;
+  background-color: $semi-alice-blue;
   font-family:'Josefin Sans', sans-serif;
   }
   .worksButton span {
     transition: all 0.3s;
     text-transform: capitalize;
-    color: #000000;
+    color: $total-black;
     font-size: 15px;
     font-weight: 900;
   }
   .worksButton:hover span {
     letter-spacing: 1px;
-    color: rgb(127, 194, 252)
+    color: $light-blue;
   }
   

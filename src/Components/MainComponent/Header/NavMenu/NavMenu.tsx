@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-scroll";
 import { Element } from '../../../../types';
-import styles from './NavMenu.module.css'
+import styles from './NavMenu.module.scss'
 
 interface iProps {
   elements: Element[]

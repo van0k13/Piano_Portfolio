@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Fade from 'react-awesome-reveal'
-import styles from './Prices.module.css'
+import styles from './Prices.module.scss'
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header';
 import { Button } from '../../SupportiveComponents/ButtonComponent/Button';
 

@@ -1,15 +1,17 @@
+@import '../../../assets/styles/global.scss';
+
 .headerContainer {
-    background-color: #fff;
+    background-color: $total-white;
     width: 100%;
     min-height: 100px;
     margin-bottom: 50px;
 }   
 .headerContainer h1 {
     font-size: 48px;
-    color:rgba(0, 0, 0, 0.8);
+    color:$total-dark-80;
     font-weight: 700;
     position: relative;
 }
 .headerContainer span {
-    color: #e5e8ec;
+    color: $semi-alice-blue;
 }

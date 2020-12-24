@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from 'react';
-import styles from './ButtonStyle.module.css'
+import styles from './ButtonStyle.module.scss'
 
 interface IPropsButtonWithHookSupp {
     noContainer?: boolean,

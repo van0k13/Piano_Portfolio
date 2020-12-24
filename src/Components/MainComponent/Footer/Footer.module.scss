@@ -1,6 +1,8 @@
+@import '../../../assets/styles/global.scss';
+
 .footer {
     min-height: 50vh;
-    background-color: #fff;
+    background-color: $total-white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +61,7 @@
   }
   
   .bottom {
-    color: rgba(0, 0, 0, 0.623);
+    color: $total-dark-623;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-align: center;

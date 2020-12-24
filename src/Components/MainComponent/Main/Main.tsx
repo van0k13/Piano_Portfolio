@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
 
 interface iProps {
   introComponent: {

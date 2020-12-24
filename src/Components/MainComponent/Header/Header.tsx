@@ -1,6 +1,6 @@
 import React from 'react';
 import { Element } from '../../../types';
-import styles from './Header.module.css'
+import styles from './Header.module.scss'
 import NavMenu from './NavMenu/NavMenu';
 
 interface iProps {

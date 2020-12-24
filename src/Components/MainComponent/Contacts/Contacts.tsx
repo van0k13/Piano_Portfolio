@@ -1,6 +1,6 @@
 import React from 'react';
 import Fade from 'react-awesome-reveal'
-import styles from './Contacts.module.css'
+import styles from './Contacts.module.scss'
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header';
 import { Button } from '../../SupportiveComponents/ButtonComponent/Button';
 

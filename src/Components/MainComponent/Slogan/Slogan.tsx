@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Slogan.module.css'
+import styles from './Slogan.module.scss'
 
 interface iProps {
   sloganComponent: {

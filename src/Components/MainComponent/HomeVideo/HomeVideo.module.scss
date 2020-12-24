@@ -1,6 +1,8 @@
+@import '../../../assets/styles/global.scss';
+
 .homeVideoBlock {
     min-height: 100vh;
-    background-color: #fff;
+    background-color: $total-white;
 }
 .container {
     display: flex;

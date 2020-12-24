@@ -1,3 +1,5 @@
+@import '../../../../assets/styles/global.scss';
+
 .headers {
     display: flex;
     justify-content: space-between;
@@ -7,7 +9,7 @@
     margin-right: 20px;
 }
 .headers div a {
-    color: #333333;
+    color: $light-dark;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -20,8 +22,8 @@
 
   
 .headers > .active {
-    border-bottom: 2px solid rgba(68, 75, 139, 0.658);
-    color: rgb(85, 112, 112);
+    border-bottom: 2px solid $deep-blue-685;
+    color: $dark-lazur;
 }
   
 .link{

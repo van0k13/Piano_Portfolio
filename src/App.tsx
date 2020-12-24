@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from'./App.module.css';
+import styles from'./App.module.scss';
 import AboutMe from './Components/MainComponent/AboutMe/aboutme';
 import Contacts from './Components/MainComponent/Contacts/Contacts';
 import Homevideo from './Components/MainComponent/HomeVideo/homeVideo';

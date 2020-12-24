@@ -1,9 +1,11 @@
+@import '../../../assets/styles/global.scss';
+
 .aboutMeBlock {
     display: flex;
     justify-content: space-evenly;  
     padding: 50px 0;
     min-height: 70vh;
-    background-color: rgb(255, 255, 255);
+    background-color: $total-white;
     text-align: start;
 }
 .photoContainer {
@@ -25,13 +27,13 @@
     line-height: 1.8em;
     font-weight: 300;
     font-family: 'Hind', sans-serif;
-    color: #848484;
+    color: $light-grey;
 }
 .contactsButton {
 position: relative;
 padding: 11px 35px;
 line-height: 24px;
-color: #333;
+color: $light-dark;
 text-align: center;
 display: inline-block;
 font-size: 14px;
@@ -39,13 +41,13 @@ font-weight: 400;
 background: transparent;
 letter-spacing: 1px;
 text-transform: uppercase;
-border: 1px solid #333;
+border: 1px solid $light-dark;
 font-family: 'Poppins', sans-serif;
 transition: 0.3s ease-in-out;
 }
 .contactsButton:hover {
-    color: #ffffff;
-    background: #333;
-    border-color: #333;
+    color: $total-white;
+    background: $light-dark;
+    border-color: $light-dark;
     cursor: pointer;
 }
