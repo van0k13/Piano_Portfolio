@@ -20,6 +20,7 @@
     cursor: pointer;
     font-family: 'Hind', sans-serif;
     transition: 0.3s ease-in-out;
+    outline: none !important;
 }
 .button:hover {
     color: $total-white;
