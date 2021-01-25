@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './modals.module.css'
+import s from './modals.module.scss'
 
 interface IModal {
     setIsOpenModal: (value: boolean) => void
