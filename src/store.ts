@@ -9,10 +9,11 @@ import introImage from './assets/img/piano3.jpg'
 import aboutMeImage from './assets/img/Koti.jpg'
 import sloganImage from './assets/img/noti.jpg'
 import contactImage from './assets/img/hands.jpg'
+import { IInitialState } from './types'
 
 
 
-export const initialState = {
+export const initialState: IInitialState = {
     homeVideoComponent: 
     {
         projects: [

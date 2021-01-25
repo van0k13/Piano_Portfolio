@@ -10,10 +10,13 @@ import Header from './Components/MainComponent/Header/Header';
 import Slogan from './Components/MainComponent/Slogan/Slogan';
 import { BrowserRouter } from 'react-router-dom';
 import { initialState } from './store';
+import { IInitialState } from './types';
 
-const App = () => {
+
+const App: React.FC = () => {
   const {headerComponent, aboutMeComponent, homeVideoComponent, introComponent, 
-    sloganComponent, pricesComponent, contactComopnent} = initialState;
+    sloganComponent, pricesComponent, contactComopnent}: IInitialState = initialState;
+
   return (
     <div className={styles.App}>
       <Header headerComponent={headerComponent}/>
@@ -26,14 +29,15 @@ const App = () => {
       <Footer />
     </div>
   );
-}
+};
 
-const MainApp = () => {
+const MainApp: React.FC = () => {
+
   return (
     <BrowserRouter>
     <App />
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default MainApp;
