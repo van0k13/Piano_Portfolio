@@ -1,0 +1,15 @@
+.slider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(172, 84, 84);
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.slider_closed {
+    position: fixed;
+    left: -10px;
+    z-index: -10;
+}

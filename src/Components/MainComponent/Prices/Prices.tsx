@@ -21,9 +21,9 @@ interface iProps {
 const Prices: React.FC<iProps> = ({pricesComponent}) => {
   const [toggleValue, setToggleValue] = useState(false)
   const {headerTextH1Value, headerTextSpanValue, prices, localText, remoteText} = pricesComponent;
-  const remoteLessonsElements = prices.map(l => {
+  const remoteLessonsElements = prices.map((l,i) => {
     return ( 
-      <div className={styles.spanContainer}> 
+      <div className={styles.spanContainer} key={i}> 
         <span className={styles.spanText}>{l.lessonText}</span>
         {toggleValue ? <span>{l.localLessons} $</span> : <span>{l.remoteLessons} $</span>} 
       </div>
