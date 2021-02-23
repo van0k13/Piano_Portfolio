@@ -49,3 +49,35 @@ transition: 0.3s ease-in-out;
     border-color: $light-dark;
     cursor: pointer;
 }
+
+.linkContainer {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: $light-grey;
+    background-color: $total-white;
+    margin-right: 10px;
+    border: 1px solid #e5e8ec;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    outline: none !important;
+}
+.link:hover {
+    color: $total-white;
+    background-color: $light-grey;
+}
+.link:focus {
+    border: none;
+}

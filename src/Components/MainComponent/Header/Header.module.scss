@@ -27,12 +27,13 @@
         flex-direction: row;
         width: 50px;
         height: 50px;
+        cursor: pointer;
         background-color: $light-grey;
         border-radius: 50%;
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 2;
+        z-index: 10;
 
         &-opened {
             position: absolute;
@@ -71,7 +72,6 @@
         }
 
         &-closed {
-    
             &::after {
                 content: '';
                 position: absolute;
