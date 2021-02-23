@@ -31,7 +31,6 @@
     font-stretch: normal;
     line-height: 1.2;
     font-size: 36px;
-    font-family: 'Josefin Sans', sans-serif;
     margin-top: 70px;
   }
 
@@ -51,7 +50,6 @@
       background-color: $semi-alice-blue;
       color: $total-dark-80;
       resize: none;
-      font-family: 'Josefin Sans', sans-serif;
       transition: 0.4s ease-in-out 0s;
       outline: none !important;
 
@@ -73,7 +71,6 @@
 	width: 150px;
   cursor: pointer;
   background-color: $semi-alice-blue;
-  font-family:'Josefin Sans', sans-serif;
   }
   .worksButton span {
     transition: all 0.3s;
