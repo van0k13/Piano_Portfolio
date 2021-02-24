@@ -1,0 +1,73 @@
+{
+    "homeVideoComponent": {
+        "projects": {
+            "Project7Name": "Проект 7",
+            "Project8Name": "Проект 8",
+            "Project9Name": "Проект 9",
+            "Project10Name": "Проект 10",
+            "Project11Name": "Проект 11",
+            "Project12Name": "Проект 12",
+            "Project13Name": "Проект 13",
+            "Project14Name": "Проект 14",
+            "Project15Name": "Проект 15",
+            "Project16Name": "Проект 16"
+        },
+        "headerTextH1Value": "Мой",
+        "headerTextSpanValue": "Перформанс",
+        "buttonName": {
+            "1": "Все",
+            "2": "Фото",
+            "3": "Видео"
+        }
+    },
+    "headerComponent": {
+        "navElements": {
+            "homeElement": "Главная",
+            "aboutElement": "Обо мне",
+            "homeVideoElement": "Мои выступления",
+            "pricesElement": "Цены",
+            "contactsElement": "Связь со мной",
+            "findElement": "Ищите меня здесь"
+        }
+    },
+    "aboutMeComponent": {
+        "aboutMeText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "headerTextH1Value": "Обо",
+        "headerTextSpanValue": "Мне",
+        "buttonName": "Связаться"
+    },
+    "introComponent": {
+        "h2Text": "Привет, я Ольга",
+        "h1Text": "Професиональный пианист"
+    },
+    "sloganComponent": {
+        "sloganText": "Я рада работать в удовольствие для Вас за малый бюджет. Моя цель - найти подход к любому ученику."
+    },
+    "pricesComponent": {
+        "headerTextH1Value": "Уроки",
+        "headerTextSpanValue": "Цена",
+        "localText": "Цена за урок на дому",
+        "remoteText": "Цена за удаленный урок",
+        "prices": {
+            "oneLessonText": "Одно занятие",
+            "fiveLessonsText": "Пять занятий",
+            "tenLessonsText": "Десять занятий"
+        },
+        "buttons": {
+            "local": "на дому",
+            "remote": "удаленно"
+        }
+    },
+    "contactComopnent": {
+        "headerTextH1Value": "Свяжись",
+        "headerTextSpanValue": "Со мной",
+        "name": "Имя",
+        "email": "Э-мейл",
+        "text": "Ваше сообщение",
+        "sendButton": "Отправить"
+    },
+    "footerComponent": {
+        "footerTextH1Value": "Ольга",
+        "footerTextSpanValue": "Лавренюк"
+    }
+}

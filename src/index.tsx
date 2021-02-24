@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
-import MainApp from './App';
+import App from './App';
+import './assets/i18next'
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainApp />
+    <Suspense fallback={<div>Loading ....</div>}>
+      <App />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

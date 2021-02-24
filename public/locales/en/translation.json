@@ -1,0 +1,73 @@
+{
+    "homeVideoComponent": {
+        "projects": {
+            "Project7Name": "Project7",
+            "Project8Name": "Project8",
+            "Project9Name": "Project9",
+            "Project10Name": "Project10",
+            "Project11Name": "Project11",
+            "Project12Name": "Project12",
+            "Project13Name": "Project13",
+            "Project14Name": "Project14",
+            "Project15Name": "Project15",
+            "Project16Name": "Project16"
+        },
+        "headerTextH1Value": "My",
+        "headerTextSpanValue": "Performance",
+        "buttonName": {
+            "1": "All",
+            "2": "Photo",
+            "3": "Video"
+        }
+    },
+    "headerComponent": {
+        "navElements": {
+            "homeElement": "home",
+            "aboutElement": "about",
+            "homeVideoElement": "homeVideo",
+            "pricesElement": "prices",
+            "contactsElement": "contacts",
+            "findElement": "find me on"
+        }
+    },
+    "aboutMeComponent": {
+        "aboutMeText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "headerTextH1Value": "About",
+        "headerTextSpanValue": "Me",
+        "buttonName": "Contact Me"
+    },
+    "introComponent": {
+        "h2Text": "Hi, I'm Olga",
+        "h1Text": "Professional pianist"
+    },
+    "sloganComponent": {
+        "sloganText": "I am happy to be able to gift beautiful work within a small budget. My purpose is to please clients."
+    },
+    "pricesComponent": {
+        "headerTextH1Value": "Lessons",
+        "headerTextSpanValue": "Price",
+        "localText": "Prices for local lessons",
+        "remoteText": "Prices for remote lessons",
+        "prices": {
+            "oneLessonText": "One Lesson",
+            "fiveLessonsText": "Five Lesson",
+            "tenLessonsText": "Ten Lesson"
+        },
+        "buttons": {
+            "local": "Check remote",
+            "remote": "Check local"
+        }
+    },
+    "contactComopnent": {
+        "headerTextH1Value": "Contact",
+        "headerTextSpanValue": "Me",
+        "name": "Name",
+        "email": "Email",
+        "text": "Your message",
+        "sendButton": "Submit"
+    },
+    "footerComponent": {
+        "footerTextH1Value": "Olga",
+        "footerTextSpanValue": "Lavrenyuk"
+    }
+}

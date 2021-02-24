@@ -1,11 +1,12 @@
 export interface IInitialState {
     homeVideoComponent: HomeVideoComponent,
-    headerComponent:HeaderComponent,
+    headerComponent: HeaderComponent,
     aboutMeComponent: AboutMeComponent,
     introComponent: IntroComponent,
     sloganComponent: SloganComponent,
     pricesComponent: PricesComponent,
-    contactComopnent:ContactComopnent,
+    contactComopnent: ContactComopnent,
+    footerComponent: FooterComponent
 }
 
 export interface Project {
@@ -16,7 +17,7 @@ export interface Project {
 }
 
 export interface Element {
-    id: number;
+    id: string;
     name: string;
 }
 
@@ -31,47 +32,71 @@ export const constantVariables = {
     PHOTO_TYPE: 'Photo'
 }
 
-type HomeVideoComponent = {
+type links = {
+    facebook: string,
+    insta: string,
+    youtube: string,
+    telega: string
+}
+
+export type FooterComponent = {
+    footerTextH1Value: string,
+    footerTextSpanValue: string,
+    links: links,
+    bgImage: links
+}
+
+export type HomeVideoComponent = {
     projects: Project[],
     headerTextH1Value: string,
     headerTextSpanValue: string,
     buttonName: string[]
 }
 
-type HeaderComponent = {
-    navElements:Element[],
+export type HeaderComponent = {
+    navElements: Element[],
     logoText: string
 }
 
-type AboutMeComponent = {
+export type AboutMeComponent = {
     aboutMeText: string,
     aboutMeImage: string,
     headerTextH1Value: string,
     headerTextSpanValue: string,
     buttonName: string
 }
- type IntroComponent = {
+
+export type IntroComponent = {
     h2Text: string,
     h1Text: string,
     introImage: string
- }
+}
 
- type SloganComponent = {
+export type SloganComponent = {
     sloganText: string,
     sloganImage: string
- }
+}
 
- type PricesComponent = {
+export type PricesComponent = {
     headerTextH1Value: string,
     headerTextSpanValue: string,
     localText: string,
     remoteText: string,
-    prices: Prices[]
- }
+    prices: Prices[],
+    buttons: {
+        local: string,
+        remote: string
+    }
+}
 
- type ContactComopnent = {
+export type ContactComopnent = {
     headerTextH1Value: string,
     headerTextSpanValue: string,
-    contactImage: string
- }
- 
+    submitForm: {
+        name: string,
+        email: string,
+        text: string
+    }
+    contactImage: string,
+    sendButton: string
+}

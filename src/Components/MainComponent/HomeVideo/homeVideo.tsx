@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import Fade from 'react-awesome-reveal'
 import styles from './HomeVideo.module.scss'
 import HomeVideoBody from './Body/HomeVideoBody';
-import { constantVariables, Project } from '../../../types';
+import { constantVariables, HomeVideoComponent } from '../../../types';
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header';
 
 interface iProps {
-  homeVideoComponent: {
-    projects: Project[],
-    headerTextH1Value: string,
-    headerTextSpanValue: string,
-    buttonName: string[]
-  }
+  homeVideoComponent: HomeVideoComponent
 }
 
 const Homevideo: React.FC<iProps> = ({homeVideoComponent}) => {
@@ -19,7 +14,7 @@ const Homevideo: React.FC<iProps> = ({homeVideoComponent}) => {
   const {projects, headerTextH1Value, headerTextSpanValue, buttonName} = homeVideoComponent;
   const {PHOTO_TYPE, VIDEO_TYPE} = constantVariables;
   return <Fade>
-    <div id = {'homeVideo'}className={styles.homeVideoBlock}>
+    <div id='homeVideo' className={styles.homeVideoBlock} >
       <div className={styles.container}>
         <HeaderComponent h1Value={headerTextH1Value} spanValue={headerTextSpanValue}/>
         <HomeVideoBody buttonNames={buttonName} setFilterValue={setFilterValue}

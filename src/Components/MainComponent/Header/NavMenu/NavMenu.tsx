@@ -1,7 +1,9 @@
 
-import { Drawer, Typography, List, Divider, ListItem, ListItemText } from '@material-ui/core';
+import { Drawer, Typography, List, Divider, ListItem, ButtonGroup, Button } from '@material-ui/core';
 import { Link } from "react-scroll";
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { Element } from '../../../../types';
 import styles from './NavMenu.module.scss'
 
@@ -14,6 +16,8 @@ interface iProps {
 
 const NavMenu: React.FC<iProps> = ({ elements, open, onClose, logoText }) => {
 
+  const { t, i18n } = useTranslation();
+
   const list = () => {
     return <List>
       {elements.map((el, index) => (
@@ -25,25 +29,34 @@ const NavMenu: React.FC<iProps> = ({ elements, open, onClose, logoText }) => {
             smooth={true}
             offset={0}
             duration={700}
-            to={el.name}
+            to={el.id}
             onClick={onClose}
             className={styles.link}
           >
-            {el.name}
+            {t(el.name)}
           </Link>
         </ListItem>
       ))}
     </List>
   };
 
+  const handleLangClick = (lang: string) => {
+    i18n.changeLanguage(lang);
+  }
+
   return (
     <div className={styles.headers}>
       <Drawer open={open} onClose={onClose}>
-        <Typography variant="h2" gutterBottom style={{marginRight: '50px'}}>
+        <Typography variant="h2" gutterBottom style={{ marginRight: '50px' }}>
           {logoText}
         </Typography>
         <Divider />
         {list()}
+        <ButtonGroup variant="text" color="primary" aria-label="text primary button group" style={{position: "absolute", bottom: "0", margin: "0 0 25px 10px"}}>
+          <Button onClick={() => handleLangClick('en')}>English</Button>
+          <Button onClick={() => handleLangClick('ua')}>Ukrainian</Button>
+          <Button onClick={() => handleLangClick('rus')}>Parussian</Button>
+        </ButtonGroup>
       </Drawer>
     </div>
   );

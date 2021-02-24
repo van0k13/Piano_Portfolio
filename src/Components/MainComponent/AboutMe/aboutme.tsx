@@ -1,31 +1,30 @@
 import React from 'react';
-import Fade from 'react-awesome-reveal'
+import Fade from 'react-awesome-reveal';
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-scroll";
 import styles from './AboutMe.module.scss'
 import { HeaderComponent } from '../../SupportiveComponents/HeaderComponent/Header';
+import { AboutMeComponent } from '../../../types';
 
 interface iProps {
-  aboutMeComponent: {
-    aboutMeText: string,
-    aboutMeImage: string,
-    headerTextH1Value: string,
-    headerTextSpanValue: string,
-    buttonName: string
-  }
+  aboutMeComponent: AboutMeComponent
 }
 
 const AboutMe: React.FC<iProps> = ({ aboutMeComponent }) => {
+
   const { aboutMeText, aboutMeImage, headerTextH1Value, headerTextSpanValue,
     buttonName } = aboutMeComponent;
 
+  const { t } = useTranslation();
+
   return (
     <Fade >
-      <div id={'about'} className={styles.aboutMeBlock}>
+      <div id='about' className={styles.aboutMeBlock} >
         <div className={styles.photoContainer} style={{ backgroundImage: `url(${aboutMeImage})` }} />
         <div className={styles.container}>
-          <HeaderComponent h1Value={headerTextH1Value} spanValue={headerTextSpanValue} />
+          <HeaderComponent h1Value={t(headerTextH1Value)} spanValue={t(headerTextSpanValue)} />
           <div className={styles.text}>
-            <p> {aboutMeText} </p> <br />
+            <p> {t(aboutMeText)} </p> <br />
           </div>
           <div className={styles.linkContainer}>
             <Link
@@ -33,10 +32,10 @@ const AboutMe: React.FC<iProps> = ({ aboutMeComponent }) => {
               smooth={true}
               offset={0}
               duration={700}
-              to={'contacts'}
+              to='contacts'
               className={styles.link}
             >
-              Contact Me
+              {t(buttonName)}
             </Link>
           </div>
         </div>

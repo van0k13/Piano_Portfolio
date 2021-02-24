@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Element } from '../../../types';
+import { HeaderComponent } from '../../../types';
 import styles from './Header.module.scss'
 import NavMenu from './NavMenu/NavMenu';
 
+
 interface iProps {
-  headerComponent: {
-    navElements: Element[],
-    logoText: string
-  }
+  headerComponent: HeaderComponent
 }
 
 const Header: React.FC<iProps> = ({ headerComponent }) => {
@@ -27,7 +25,8 @@ const Header: React.FC<iProps> = ({ headerComponent }) => {
         elements={navElements}
         open={openedBurger}
         onClose={() => setOpenedBurger(!openedBurger)}
-        logoText={logoText} />
+        logoText={logoText}
+      />
     </div>
   );
 }

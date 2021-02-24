@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from'./App.module.scss';
+import styles from './App.module.scss';
 import AboutMe from './Components/MainComponent/AboutMe/aboutme';
 import Contacts from './Components/MainComponent/Contacts/Contacts';
 import Homevideo from './Components/MainComponent/HomeVideo/homeVideo';
@@ -14,30 +14,23 @@ import { IInitialState } from './types';
 
 
 const App: React.FC = () => {
-  const {headerComponent, aboutMeComponent, homeVideoComponent, introComponent, 
-    sloganComponent, pricesComponent, contactComopnent}: IInitialState = initialState;
-
-  return (
-    <div className={styles.App}>
-      <Header headerComponent={headerComponent}/>
-      <Main introComponent={introComponent}/>
-      <AboutMe aboutMeComponent={aboutMeComponent}/>
-      <Homevideo homeVideoComponent={homeVideoComponent}/>
-      <Slogan sloganComponent={sloganComponent}/>
-      <Prices pricesComponent={pricesComponent}/>
-      <Contacts contactComopnent={contactComopnent}/>
-      <Footer />
-    </div>
-  );
-};
-
-const MainApp: React.FC = () => {
+  const { headerComponent, aboutMeComponent, homeVideoComponent, introComponent,
+    sloganComponent, pricesComponent, contactComopnent, footerComponent }: IInitialState = initialState;
 
   return (
     <BrowserRouter>
-    <App />
+      <div className={styles.App}>
+        <Header headerComponent={headerComponent} />
+        <Main introComponent={introComponent} />
+        <AboutMe aboutMeComponent={aboutMeComponent} />
+        <Homevideo homeVideoComponent={homeVideoComponent} />
+        <Slogan sloganComponent={sloganComponent} />
+        <Prices pricesComponent={pricesComponent} />
+        <Contacts contactComopnent={contactComopnent} />
+        <Footer footerComponent={footerComponent} />
+      </div>
     </BrowserRouter>
   );
 };
 
-export default MainApp;
+export default App;

@@ -1,4 +1,5 @@
 import React, { Dispatch, SetStateAction, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -56,6 +57,8 @@ const HomeVideoBody: React.FC<iProps> = ({ setFilterValue, projects, buttonNames
 
   const classes = useStyles();
 
+  const { t } = useTranslation();
+
   const projectsElements = projects.map((p, i) =>
     <Card className={classes.root} key={i}>
       <CardActionArea>
@@ -65,7 +68,7 @@ const HomeVideoBody: React.FC<iProps> = ({ setFilterValue, projects, buttonNames
           onClick={() => onImageClickHandler(p.id)}
         />
         <GridListTileBar
-          title={p.name}
+          title={t(p.name)}
         />
       </CardActionArea>
       <CardActions>
